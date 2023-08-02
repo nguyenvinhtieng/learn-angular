@@ -10,6 +10,7 @@ import { AuthorListComponent } from './author-list/author-list.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { CustomTwowayBindingComponent } from './custom-twoway-binding/custom-twoway-binding.component';
 import { CustomTwowayBindingCopyComponent } from './custom-twoway-binding-copy/custom-twoway-binding-copy.component';
+import { LContentProjectionComponent } from './l-content-projection/l-content-projection.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CustomTwowayBindingCopyComponent } from './custom-twoway-binding-copy/c
     AuthorListComponent,
     AuthorDetailComponent,
     CustomTwowayBindingComponent,
-    CustomTwowayBindingCopyComponent
+    CustomTwowayBindingCopyComponent,
+    LContentProjectionComponent
   ],
   imports: [
     BrowserModule,

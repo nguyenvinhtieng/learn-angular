@@ -254,7 +254,10 @@ export class AppComponent {
 
   username = ""
   checked = false
-
+  questions = {
+    question1: true,
+    question2: false,
+  }
   handler() {
     console.log('Clicked')
   }

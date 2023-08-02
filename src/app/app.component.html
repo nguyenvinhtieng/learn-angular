@@ -41,14 +41,26 @@ Age: {{ user.age }}
 
 
 <!-- <app-author-list></app-author-list> -->
-
+<!-- 
 <app-author-list></app-author-list>
 
 <h1>Hello {{username}}</h1>
-<input type="text" [(ngModel)]="username" (ngModelChange)="username = $event">
+<input type="text" [(ngModel)]="username" (ngModelChange)="username = $event"> -->
 
 <!-- <app-custom-twoway-binding [(checked)]="checked"></app-custom-twoway-binding> -->
-<app-custom-twoway-binding-copy [(checked)]="checked" #toggleComp></app-custom-twoway-binding-copy>
+<!-- <app-custom-twoway-binding-copy [(checked)]="checked" #toggleComp></app-custom-twoway-binding-copy> -->
 
 
-<button (click)="toggleComp.toggle()">Toggle me</button>
+<!-- <button (click)="toggleComp.toggle()">Toggle me</button> -->
+
+
+<app-l-content-projection [(checked)]="questions.question1">
+  <h2>Header: Header 1</h2>
+  <p class="question">Question: Question 1</p>
+  <p class="content">Content: Content 1</p>
+</app-l-content-projection>
+<app-l-content-projection [(checked)]="questions.question2" [canSkip]="true">
+  <h2>Header: Header 2</h2>
+  <p class="question">Question: Question 2</p>
+  <p class="content">Content: Content 2</p>
+</app-l-content-projection>

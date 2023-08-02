@@ -1,0 +1,14 @@
+<ng-content select="h2"></ng-content>
+<p (click)="checkedChange.emit(!checked)">Component is {{checked ? "Checked" : "not Checking"}}</p>
+<p><ng-content select="p.question"></ng-content></p>
+<p><ng-content select="p.content"></ng-content></p>
+<div *ngIf="canSkip">
+    <button>Skip</button>
+</div>
+
+<p>You have <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> selected</p>
+<p>Number item selected is <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container></p>
+<ng-template #counterTmpl>
+    {{counter}} items
+</ng-template>
+<br><br><hr>
