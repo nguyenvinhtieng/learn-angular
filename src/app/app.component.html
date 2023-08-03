@@ -41,7 +41,7 @@ Age: {{ user.age }}
 
 
 <!-- <app-author-list></app-author-list> -->
-<!-- 
+<!--
 <app-author-list></app-author-list>
 
 <h1>Hello {{username}}</h1>
@@ -50,17 +50,56 @@ Age: {{ user.age }}
 <!-- <app-custom-twoway-binding [(checked)]="checked"></app-custom-twoway-binding> -->
 <!-- <app-custom-twoway-binding-copy [(checked)]="checked" #toggleComp></app-custom-twoway-binding-copy> -->
 
-
+<!-- <button (click)="handleClick()">Click me</button> -->
 <!-- <button (click)="toggleComp.toggle()">Toggle me</button> -->
 
 
-<app-l-content-projection [(checked)]="questions.question1">
+<!-- <app-l-content-projection [(checked)]="questions.question1">
   <h2>Header: Header 1</h2>
   <p class="question">Question: Question 1</p>
   <p class="content">Content: Content 1</p>
 </app-l-content-projection>
-<app-l-content-projection [(checked)]="questions.question2" [canSkip]="true">
+<app-l-content-projection [(checked)]="questions.question2" [(canSkip)]="canSkip">
   <h2>Header: Header 2</h2>
   <p class="question">Question: Question 2</p>
   <p class="content">Content: Content 2</p>
-</app-l-content-projection>
+</app-l-content-projection> -->
+
+
+<!-- <app-tab-group [(activeIndex)]="curentIndex" >
+  <app-tab-panel title="tab 1">
+    <ng-template>
+      tab content 1 <app-counter></app-counter>
+    </ng-template>
+  </app-tab-panel>
+  <app-tab-panel title="tab 2">
+    <ng-template>
+      tab content 2 <app-counter></app-counter>
+    </ng-template>
+  </app-tab-panel>
+  <app-tab-panel title="tab 3">
+    <ng-template>
+      tab content 3 <app-counter></app-counter>
+    </ng-template>
+  </app-tab-panel>
+  <app-tab-panel title="tab 4">
+    <ng-template>
+      tab content 4 <app-counter></app-counter>
+    </ng-template>
+  </app-tab-panel>
+  <app-tab-panel title="tab 5">
+    <ng-template>
+      tab content 5 <app-counter></app-counter>
+    </ng-template>
+  </app-tab-panel>
+</app-tab-group> -->
+<!--
+<app-tab-group-copy [(activeIndex)]="curentIndex" >
+  <app-tab-panel title="tab 1">tab content 1</app-tab-panel>
+  <app-tab-panel title="tab 2">tab content 2</app-tab-panel>
+  <app-tab-panel title="tab 3">tab content 3</app-tab-panel>
+  <app-tab-panel title="tab 4">tab content 4</app-tab-panel>
+  <app-tab-panel title="tab 5">tab content 5</app-tab-panel>
+</app-tab-group-copy> -->
+
+<!-- <app-pipe></app-pipe> -->

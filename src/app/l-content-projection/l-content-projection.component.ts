@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class LContentProjectionComponent {
   @Input() checked: boolean = false;
   @Output() checkedChange = new EventEmitter<boolean>();
-  @Input() canSkip: boolean = false;
+  @Input() canSkip?: boolean;
   @Output() canSkipChange = new EventEmitter<boolean>();
   counter = 1;
 }

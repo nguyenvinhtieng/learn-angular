@@ -258,16 +258,37 @@ export class AppComponent {
     question1: true,
     question2: false,
   }
-  handler() {
-    console.log('Clicked')
-  }
 
-  ngAfterViewInit() {
-    console.log(this.toggleComp)
-  }
+  canSkip = true
+  curentIndex = 0
+  // handler() {
+  //   console.log('Clicked')
+  // }
 
+  // ngAfterViewInit() {
+  //   console.log(this.toggleComp)
+  // }
+
+  handleClick() {
+    console.log("clicked: ", this.canSkip)
+  }
   // handleInputChange(event: any) {
 
   //   this.name = event.target.value
   // }
 }
+
+
+import { from, interval, of, timer } from "rxjs"
+
+const observer = {
+  next: (value: unknown) => console.log("value: ", value),
+  error: (error: unknown) => console.log(error),
+  complete: () => console.log('complete'),
+}
+
+// of('hello').subscribe(observer)
+// from([1, 2, 3, 4, 5]).subscribe(observer)
+
+// interval(1000).subscribe(observer)
+timer(2000).subscribe(observer)

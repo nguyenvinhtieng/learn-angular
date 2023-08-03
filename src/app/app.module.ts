@@ -11,6 +11,12 @@ import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { CustomTwowayBindingComponent } from './custom-twoway-binding/custom-twoway-binding.component';
 import { CustomTwowayBindingCopyComponent } from './custom-twoway-binding-copy/custom-twoway-binding-copy.component';
 import { LContentProjectionComponent } from './l-content-projection/l-content-projection.component';
+import { TabGroupComponent } from './tab-group/tab-group.component';
+import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { TabGroupCopyComponent } from './tab-group-copy/tab-group-copy.component';
+import { CounterComponent } from './counter/counter.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { FormatAdressPipe } from './pipe/format-address-pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { LContentProjectionComponent } from './l-content-projection/l-content-pr
     AuthorDetailComponent,
     CustomTwowayBindingComponent,
     CustomTwowayBindingCopyComponent,
-    LContentProjectionComponent
+    LContentProjectionComponent,
+    TabGroupComponent,
+    TabPanelComponent,
+    TabGroupCopyComponent,
+    CounterComponent,
+    PipeComponent,
+    FormatAdressPipe
   ],
   imports: [
     BrowserModule,

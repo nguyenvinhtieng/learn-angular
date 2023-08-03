@@ -1,0 +1,19 @@
+<div class="tab-header">
+  <div
+    class="tab-content"
+    *ngFor="let tab of tabPanelList;let indexOfelement=index;"
+    (click)="activeIndexChange.emit(indexOfelement)">
+    <p class="tab-title">
+      {{ tab.title }}
+    </p>
+    <button (click)="removeTab(tab)">Remove tab</button>
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="tab-body" *ngIf="tabPanelList.length;else noTabs">
+  <ng-container *ngTemplateOutlet="tabPanelList[activeIndex].panelBody"></ng-container>
+</div>
+<ng-template #noTabs>
+  No tabs
+</ng-template>

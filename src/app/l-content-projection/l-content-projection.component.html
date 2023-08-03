@@ -3,7 +3,7 @@
 <p><ng-content select="p.question"></ng-content></p>
 <p><ng-content select="p.content"></ng-content></p>
 <div *ngIf="canSkip">
-    <button>Skip</button>
+    <button (click)="canSkipChange.emit(!canSkip)">Skip</button>
 </div>
 
 <p>You have <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> selected</p>
